@@ -51,7 +51,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            fetch("http://api.quotable.io/random")
+            fetch("https://api.quotable.io/random")
                 .then(response => response.json())
                 .then(data => {
                     document.querySelector(".quote-content").innerText = data.content;
