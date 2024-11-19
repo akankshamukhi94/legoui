@@ -1,7 +1,8 @@
 // modules/legoSets.js
-
+require('dotenv').config();
 const setData = require("../data/setData.json");
 const themeData = require("../data/themeData.json");
+
 
 let sets = [];
 

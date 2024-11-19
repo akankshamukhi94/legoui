@@ -8,12 +8,15 @@
 * 
 * Name: _____________Akanksha_________ Student ID: _____155514227_________ Date: ___30-09-24___________
 *
-* Published URL: https://legos-app.vercel.app/
+* Published URL: https://legoui-wine.vercel.app/
 *
 ********************************************************************************/
+require('pg'); // explicitly require the "pg" module
+const Sequelize = require('sequelize');
 const express = require("express");
 const legoData = require("./modules/legoSets");
 const path = require("path");
+
 
 const app = express();
 const PORT = process.env.PORT || 3000; // Use environment variable for flexibility
@@ -99,5 +102,5 @@ legoData.initialize()
 
 // Start the server
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+    console.log(`Server running on port HTTP://localhost:${PORT}`);
 });
